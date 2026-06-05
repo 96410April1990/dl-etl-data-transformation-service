@@ -1,7 +1,7 @@
 import json
 from kafka import KafkaConsumer
-from transform import transform_employee
-from database import save_employee
+from service.transform import transform_employee
+from repository.database import save_employee
 
 consumer = KafkaConsumer(
     "employee-topic",
